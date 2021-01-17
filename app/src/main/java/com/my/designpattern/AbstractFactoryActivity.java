@@ -1,7 +1,6 @@
 package com.my.designpattern;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class AbstractFactoryActivity extends AppCompatActivity {

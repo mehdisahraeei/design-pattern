@@ -2,13 +2,10 @@ package com.my.designpattern;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-
 import android.content.Intent;
 import android.os.Bundle;
-
+import com.my.designpattern.clicks.ClickEvent;
 import com.my.designpattern.databinding.ActivityMainBinding;
-import com.my.designpattern.model.Model1;
-import com.my.designpattern.viewmodel.Viewmodel1;
 
 public class MainActivity extends AppCompatActivity {
 
