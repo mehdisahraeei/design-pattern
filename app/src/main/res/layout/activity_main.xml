@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+<!--        <variable
+            name="modelMain"
+            type="com.my.designpattern.viewmodel.Viewmodel1" />-->
+
+        <variable
+            name="modelMainClick"
+            type="com.my.designpattern.ClickEvent" />
+    </data>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bdpagepro"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="@{(v)-> modelMainClick.ClickListener1()}"
+        android:src="@drawable/lbl1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:onClick="@{(v)-> modelMainClick.ClickListener2()}"
+        android:src="@drawable/lbl2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:onClick="@{(v)-> modelMainClick.ClickListener3()}"
+        android:src="@drawable/lbl3"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="212dp"
+        android:onClick="@{(v)-> modelMainClick.ClickListener4()}"
+        android:src="@drawable/lbl4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>
