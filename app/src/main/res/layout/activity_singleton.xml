@@ -11,7 +11,7 @@
 
         <variable
             name="modelSingletonClick"
-            type="com.my.designpattern.clicks.ClickNew" />
+            type="com.my.designpattern.clicks.ClickNew1" />
 
 
     </data>

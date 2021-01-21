@@ -6,11 +6,11 @@ import android.widget.Toast;
 import com.my.designpattern.designpattern.Singleton;
 
 
-public class ClickNew {
+public class ClickNew1 {
 
     private Context context;
 
-    public ClickNew(Context context) {
+    public ClickNew1(Context context) {
         this.context = context;
     }
 

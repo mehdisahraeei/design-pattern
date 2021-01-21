@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.widget.EditText;
-import com.my.designpattern.clicks.ClickNew;
+import com.my.designpattern.clicks.ClickNew1;
 import com.my.designpattern.databinding.ActivitySingletonBinding;
 import com.my.designpattern.model.Modelsingleton;
 import com.my.designpattern.viewmodel.Viewmodelsingleton;
@@ -12,7 +12,6 @@ import com.my.designpattern.viewmodel.Viewmodelsingleton;
 public class singletonActivity extends AppCompatActivity {
 
     private ActivitySingletonBinding binding;
-    private EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +21,7 @@ public class singletonActivity extends AppCompatActivity {
 
 
         binding.setModelSingleton(new Viewmodelsingleton(new Modelsingleton("Singleton Design Pattern")));
-        binding.setModelSingletonClick(new ClickNew(this));
+        binding.setModelSingletonClick(new ClickNew1(this));
 
 
 
