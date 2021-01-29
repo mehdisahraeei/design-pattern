@@ -2,9 +2,7 @@ package com.my.designpattern;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-
 import android.os.Bundle;
-
 import com.my.designpattern.clicks.ClickNew2;
 import com.my.designpattern.databinding.ActivityBuilderBinding;
 import com.my.designpattern.model.ModelBuilder;

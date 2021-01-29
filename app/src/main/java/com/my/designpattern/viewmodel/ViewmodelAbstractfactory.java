@@ -3,13 +3,13 @@ package com.my.designpattern.viewmodel;
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 import com.my.designpattern.BR;
-import com.my.designpattern.model.ModelProtoType;
+import com.my.designpattern.model.Modelabstractfactory;
 
-public class ViewmodelProtoType extends BaseObservable {
+public class ViewmodelAbstractfactory extends BaseObservable {
 
     public String textN;
 
-    public ViewmodelProtoType(ModelProtoType model) {
+    public ViewmodelAbstractfactory(Modelabstractfactory model) {
         this.textN = model.textN;
     }
 

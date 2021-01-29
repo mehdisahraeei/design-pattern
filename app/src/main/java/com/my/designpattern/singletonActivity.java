@@ -3,7 +3,6 @@ package com.my.designpattern;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.widget.EditText;
 import com.my.designpattern.clicks.ClickNew1;
 import com.my.designpattern.databinding.ActivitySingletonBinding;
 import com.my.designpattern.model.Modelsingleton;

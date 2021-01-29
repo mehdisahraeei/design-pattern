@@ -9,14 +9,18 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Designpattern">
-        <activity android:name=".AbstractFactoryActivity"
+        <activity
+            android:name=".AbstractFactoryActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".PrototypeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".BuilderActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".singletonActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PrototypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BuilderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".singletonActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">

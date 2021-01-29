@@ -2,10 +2,6 @@ package com.my.designpattern.clicks;
 
 import android.content.Context;
 import android.view.View;
-
-import com.google.android.material.snackbar.BaseTransientBottomBar;
-import com.google.android.material.snackbar.Snackbar;
-import com.my.designpattern.designpattern.Builder;
 import com.my.designpattern.designpattern.ProtoType;
 
 
