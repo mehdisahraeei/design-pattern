@@ -43,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
             public void ClickListener4() {
                 startActivity(new Intent(MainActivity.this,AbstractFactoryActivity.class));
             }
+
+            @Override
+            public void ClickListener5() {
+                startActivity(new Intent(MainActivity.this,FactoryActivity.class));
+            }
         });
 
 
