@@ -3,7 +3,7 @@ package com.my.designpattern;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import com.my.designpattern.clicks.ClickNew2;
+import com.my.designpattern.clicks.ClickBuilder;
 import com.my.designpattern.databinding.ActivityBuilderBinding;
 import com.my.designpattern.model.ModelBuilder;
 import com.my.designpattern.viewmodel.ViewmodelBuilder;
@@ -18,6 +18,6 @@ public class BuilderActivity extends AppCompatActivity {
         binding= DataBindingUtil.setContentView(this,R.layout.activity_builder);
 
         binding.setModelBuilder(new ViewmodelBuilder(new ModelBuilder("Builder Design Pattern")));
-        binding.setModelBuilderClick(new ClickNew2(this));
+        binding.setModelBuilderClick(new ClickBuilder(this));
     }
 }

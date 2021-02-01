@@ -6,12 +6,12 @@
     <data>
 
         <variable
-            name="modelSingleton"
-            type="com.my.designpattern.viewmodel.Viewmodelsingleton" />
+            name="modelFacade"
+            type="com.my.designpattern.viewmodel.ViewmodelFacade" />
 
         <variable
-            name="modelSingletonClick"
-            type="com.my.designpattern.clicks.Clicksingleton" />
+            name="modelFacadeClick"
+            type="com.my.designpattern.clicks.ClickFacade" />
 
 
     </data>
@@ -20,15 +20,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bdmain1"
-        tools:context=".singletonActivity">
+        tools:context=".FacadeActivity">
+
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="93dp"
-            android:text="@{modelSingleton.textN}"
+            android:text="@{modelFacade.textN}"
             android:textSize="35dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,15 +36,29 @@
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button4"
             android:layout_width="250dp"
             android:layout_height="66dp"
-            android:layout_marginBottom="95dp"
-            android:onClick="@{modelSingletonClick :: ClickL}"
-            android:text="Click"
+            android:layout_marginBottom="264dp"
+            android:onClick="@{modelFacadeClick :: ClickL1}"
+            android:text="Click1"
             android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="250dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="164dp"
+            android:onClick="@{modelFacadeClick :: ClickL2}"
+            android:text="Click2"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent" />
 
 

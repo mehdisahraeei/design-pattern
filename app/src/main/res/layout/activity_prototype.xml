@@ -11,7 +11,7 @@
 
         <variable
             name="modelProtoTypeClick"
-            type="com.my.designpattern.clicks.ClickNew3" />
+            type="com.my.designpattern.clicks.ClickProtoType" />
 
     </data>
 

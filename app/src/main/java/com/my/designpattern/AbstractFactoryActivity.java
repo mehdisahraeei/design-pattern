@@ -3,7 +3,8 @@ package com.my.designpattern;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
-import com.my.designpattern.clicks.ClickNew4;
+
+import com.my.designpattern.clicks.ClickAbstractfactory;
 import com.my.designpattern.databinding.ActivityAbstractFactoryBinding;
 import com.my.designpattern.designpattern.AbstractFactory.ChildsOfmobile.iPhone;
 import com.my.designpattern.designpattern.AbstractFactory.ChildsOfpc.iMac;
@@ -35,7 +36,7 @@ public class AbstractFactoryActivity extends AppCompatActivity {
 
         binding.setModelAbstractfactory(new ViewmodelAbstractfactory(new
                 Modelabstractfactory("abstract factory Design Pattern")));
-        binding.setModelAbstractfactoryClick(new ClickNew4() {
+        binding.setModelAbstractfactoryClick(new ClickAbstractfactory() {
             @Override
             public void ClickAbstractFactory1() {
 

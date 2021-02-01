@@ -1,6 +1,6 @@
 package com.my.designpattern.clicks;
 
-public interface ClickNew4 {
+public interface ClickAbstractfactory {
 
     void ClickAbstractFactory1();
 

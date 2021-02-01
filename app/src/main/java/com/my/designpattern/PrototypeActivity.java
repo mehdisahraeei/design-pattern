@@ -2,10 +2,8 @@ package com.my.designpattern;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-
 import android.os.Bundle;
-
-import com.my.designpattern.clicks.ClickNew3;
+import com.my.designpattern.clicks.ClickProtoType;
 import com.my.designpattern.databinding.ActivityPrototypeBinding;
 import com.my.designpattern.model.ModelProtoType;
 import com.my.designpattern.viewmodel.ViewmodelProtoType;
@@ -21,7 +19,7 @@ public class PrototypeActivity extends AppCompatActivity {
         binding= DataBindingUtil.setContentView(this,R.layout.activity_prototype);
 
         binding.setModelProtoType(new ViewmodelProtoType(new ModelProtoType("ProtoType Design Pattern")));
-        binding.setModelProtoTypeClick(new ClickNew3(this));
+        binding.setModelProtoTypeClick(new ClickProtoType(this));
 
     }
 }

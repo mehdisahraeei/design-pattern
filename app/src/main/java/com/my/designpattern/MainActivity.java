@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import android.content.Intent;
 import android.os.Bundle;
-import com.my.designpattern.clicks.ClickEvent;
+import com.my.designpattern.clicks.ClickItempattern1;
 import com.my.designpattern.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //---------Clicks with ClickListener------------
-        binding.setModelMainClick(new ClickEvent() {
+        binding.setModelMainClick(new ClickItempattern1() {
             @Override
             public void ClickListener1() {
                 startActivity(new Intent(MainActivity.this,singletonActivity.class));
@@ -48,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
             public void ClickListener5() {
                 startActivity(new Intent(MainActivity.this,FactoryActivity.class));
             }
+
+            @Override
+            public void ClickListener6() {
+                startActivity(new Intent(MainActivity.this,MainActivity2.class));
+            }
+
         });
 
 

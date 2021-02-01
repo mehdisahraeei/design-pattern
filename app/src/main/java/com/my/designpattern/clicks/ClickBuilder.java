@@ -4,11 +4,11 @@ import android.content.Context;
 import android.view.View;
 import com.my.designpattern.designpattern.Builder;
 
-public class ClickNew2 {
+public class ClickBuilder {
 
     private Context context;
 
-    public ClickNew2(Context context) {
+    public ClickBuilder(Context context) {
         this.context = context;
     }
 

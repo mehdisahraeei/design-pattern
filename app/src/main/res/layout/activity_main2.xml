@@ -5,14 +5,10 @@
 
     <data>
 
-        <variable
-            name="modelSingleton"
-            type="com.my.designpattern.viewmodel.Viewmodelsingleton" />
 
         <variable
-            name="modelSingletonClick"
-            type="com.my.designpattern.clicks.Clicksingleton" />
-
+            name="modelMain2Click"
+            type="com.my.designpattern.clicks.ClickItempattern2" />
 
     </data>
 
@@ -20,31 +16,35 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bdmain1"
-        tools:context=".singletonActivity">
+        android:background="@drawable/bdpagepro"
+        tools:context=".MainActivity2">
+
+
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="93dp"
-            android:text="@{modelSingleton.textN}"
-            android:textSize="35dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="426dp"
+            android:text="Structural design pattern"
+            android:textColor="@color/black"
+            android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="250dp"
-            android:layout_height="66dp"
-            android:layout_marginBottom="95dp"
-            android:onClick="@{modelSingletonClick :: ClickL}"
-            android:text="Click"
-            android:textSize="18dp"
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="336dp"
+            android:onClick="@{(v)-> modelMain2Click.ClickListener1()}"
+            android:src="@drawable/lbl7"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent" />
 
 
@@ -52,3 +52,4 @@
 
 
 </layout>
+

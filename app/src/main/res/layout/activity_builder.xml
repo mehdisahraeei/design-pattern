@@ -11,7 +11,7 @@
 
         <variable
             name="modelBuilderClick"
-            type="com.my.designpattern.clicks.ClickNew2" />
+            type="com.my.designpattern.clicks.ClickBuilder" />
 
 
     </data>

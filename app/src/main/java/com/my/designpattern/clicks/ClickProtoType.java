@@ -5,11 +5,11 @@ import android.view.View;
 import com.my.designpattern.designpattern.ProtoType;
 
 
-public class ClickNew3 {
+public class ClickProtoType {
 
     private Context context;
 
-    public ClickNew3(Context context) {
+    public ClickProtoType(Context context) {
         this.context = context;
     }
 

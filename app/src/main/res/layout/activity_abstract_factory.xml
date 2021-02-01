@@ -11,7 +11,7 @@
 
         <variable
             name="modelAbstractfactoryClick"
-            type="com.my.designpattern.clicks.ClickNew4" />
+            type="com.my.designpattern.clicks.ClickAbstractfactory" />
 
 
     </data>

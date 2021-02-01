@@ -1,15 +1,16 @@
 package com.my.designpattern.clicks;
+
 import android.content.Context;
 import android.view.View;
 import android.widget.Toast;
 import com.my.designpattern.designpattern.Factory.FactoryProducer;
 import com.my.designpattern.designpattern.Factory.Media;
 
-public class ClickNew5 {
+public class Clickfactory {
 
     private Context context;
 
-    public ClickNew5(Context context) {
+    public Clickfactory(Context context) {
         this.context = context;
     }
 

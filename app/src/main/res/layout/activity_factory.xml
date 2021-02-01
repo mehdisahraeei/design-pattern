@@ -13,7 +13,7 @@
 
         <variable
             name="modelFactoryClick"
-            type="com.my.designpattern.clicks.ClickNew5" />
+            type="com.my.designpattern.clicks.Clickfactory" />
 
 
     </data>
