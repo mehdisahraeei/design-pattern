@@ -21,6 +21,13 @@ public class MainActivity2 extends AppCompatActivity {
             public void ClickListener1() {
                 startActivity(new Intent(MainActivity2.this,FacadeActivity.class));
             }
+
+            @Override
+            public void ClickListener2() {
+                startActivity(new Intent(MainActivity2.this,MainActivity3.class));
+            }
+
+
         });
 
 

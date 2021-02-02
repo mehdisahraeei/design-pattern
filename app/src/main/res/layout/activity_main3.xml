@@ -4,21 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
-
         <variable
-            name="modelMain2Click"
-            type="com.my.designpattern.clicks.ClickItempattern2" />
+            name="modelMain3Click"
+            type="com.my.designpattern.clicks.ClickItempattern3" />
 
     </data>
+
+
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bdpagepro"
-        tools:context=".MainActivity2">
-
+        tools:context=".MainActivity3">
 
 
         <TextView
@@ -27,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"
             android:layout_marginBottom="426dp"
-            android:text="Structural design pattern"
+            android:text="Behavioral design pattern"
             android:textColor="@color/black"
             android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -35,13 +34,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
+
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="280dp"
             android:layout_height="60dp"
             android:layout_marginBottom="336dp"
-            android:onClick="@{(v)-> modelMain2Click.ClickListener1()}"
-            android:src="@drawable/lbl7"
+            android:onClick="@{(v)-> modelMain3Click.ClickListener1()}"
+            android:src="@drawable/lbl8"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
@@ -50,22 +50,7 @@
 
 
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:onClick="@{(v)->modelMain2Click.ClickListener2()}"
-            android:src="@drawable/lbl6"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </layout>
-
