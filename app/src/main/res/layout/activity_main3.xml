@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="modelMain3Click"
             type="com.my.designpattern.clicks.ClickItempattern3" />
 
     </data>
-
-
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,25 +20,23 @@
 
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
-            android:layout_marginBottom="426dp"
+            android:layout_marginTop="80dp"
             android:text="Behavioral design pattern"
             android:textColor="@color/black"
             android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="280dp"
             android:layout_height="60dp"
-            android:layout_marginBottom="336dp"
+            android:layout_marginBottom="472dp"
             android:onClick="@{(v)-> modelMain3Click.ClickListener1()}"
             android:src="@drawable/lbl8"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +44,17 @@
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent" />
 
-
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="380dp"
+            android:onClick="@{(v)-> modelMain3Click.ClickListener2()}"
+            android:src="@drawable/lbl9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

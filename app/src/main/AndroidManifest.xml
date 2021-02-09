@@ -9,10 +9,14 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Designpattern">
-        <activity android:name=".MainActivity3"
+        <activity android:name=".ObserverActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".StrategyActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StrategyActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FacadeActivity"
             android:screenOrientation="portrait" />

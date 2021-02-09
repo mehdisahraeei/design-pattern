@@ -20,6 +20,14 @@ public class MainActivity3 extends AppCompatActivity {
             public void ClickListener1() {
                 startActivity(new Intent(MainActivity3.this,StrategyActivity.class));
             }
+
+            @Override
+            public void ClickListener2() {
+                startActivity(new Intent(MainActivity3.this,ObserverActivity.class));
+            }
         });
+
+
+
     }
 }
