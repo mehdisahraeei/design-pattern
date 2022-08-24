@@ -9,37 +9,37 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Designpattern">
-        <activity android:name=".ObserverActivity"
+        <activity android:name=".ui.ObserverActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".MainActivity3"
+            android:name=".ui.MainActivity3"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".StrategyActivity"
+            android:name=".ui.StrategyActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".FacadeActivity"
+            android:name=".ui.FacadeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".ui.MainActivity2"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".FactoryActivity"
+            android:name=".ui.FactoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AbstractFactoryActivity"
+            android:name=".ui.AbstractFactoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PrototypeActivity"
+            android:name=".ui.PrototypeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".BuilderActivity"
+            android:name=".ui.BuilderActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".singletonActivity"
+            android:name=".ui.singletonActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

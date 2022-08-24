@@ -1,11 +1,13 @@
-package com.my.designpattern;
+package com.my.designpattern.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import android.content.Intent;
 import android.os.Bundle;
+import com.my.designpattern.R;
 import com.my.designpattern.clicks.ClickItempattern1;
 import com.my.designpattern.databinding.ActivityMainBinding;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_main);
+        binding= DataBindingUtil.setContentView(this, R.layout.activity_main);
         //--------------Casting------------------------------------------
 
 
@@ -57,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
     }
+
+    @Override
+    public void onBackPressed() {
+    }
+
 }

@@ -1,9 +1,10 @@
-package com.my.designpattern;
+package com.my.designpattern.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 
+import com.my.designpattern.R;
 import com.my.designpattern.clicks.ClickAbstractfactory;
 import com.my.designpattern.databinding.ActivityAbstractFactoryBinding;
 import com.my.designpattern.designpattern.AbstractFactory.ChildsOfmobile.iPhone;
@@ -25,7 +26,7 @@ public class AbstractFactoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_abstract_factory);
+        binding= DataBindingUtil.setContentView(this, R.layout.activity_abstract_factory);
 
         new FactoryProducer(this);
         new FactoryMobile(this);

@@ -1,9 +1,10 @@
-package com.my.designpattern;
+package com.my.designpattern.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 
+import com.my.designpattern.R;
 import com.my.designpattern.clicks.ClickFacade;
 import com.my.designpattern.databinding.ActivityFacadeBinding;
 import com.my.designpattern.model.ModelFacade;
@@ -18,7 +19,7 @@ public class FacadeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_facade);
+        binding= DataBindingUtil.setContentView(this, R.layout.activity_facade);
         binding.setModelFacade(new ViewmodelFacade(new ModelFacade("Facade Design Pattern")));
         binding.setModelFacadeClick(new ClickFacade(this));
     }

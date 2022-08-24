@@ -5,10 +5,6 @@
 
     <data>
 
-        <!--        <variable
-                    name="modelMain"
-                    type="com.my.designpattern.viewmodel.Viewmodel1" />-->
-
         <variable
             name="modelMainClick"
             type="com.my.designpattern.clicks.ClickItempattern1" />
@@ -19,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bdpagepro"
-        tools:context=".MainActivity">
+        tools:context=".ui.MainActivity">
 
 
         <TextView
@@ -39,7 +35,7 @@
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="280dp"
-            android:layout_height="0dp"
+            android:layout_height="50dp"
             android:layout_marginTop="226dp"
             android:layout_marginBottom="16dp"
             android:onClick="@{(v)-> modelMainClick.ClickListener1()}"
@@ -54,7 +50,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="280dp"
-            android:layout_height="0dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="19dp"
             android:onClick="@{(v)-> modelMainClick.ClickListener2()}"
             android:src="@drawable/lbl2"
@@ -68,7 +64,7 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="280dp"
-            android:layout_height="0dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="18dp"
             android:onClick="@{(v)-> modelMainClick.ClickListener3()}"
             android:src="@drawable/lbl3"
@@ -81,7 +77,7 @@
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="280dp"
-            android:layout_height="0dp"
+            android:layout_height="50dp"
             android:layout_marginBottom="212dp"
             android:onClick="@{(v)-> modelMainClick.ClickListener4()}"
             android:src="@drawable/lbl4"
@@ -93,16 +89,17 @@
 
 
         <ImageView
-            android:id="@id/imageView5"
+            android:id="@+id/imageView5"
             android:layout_width="280dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="132dp"
+            android:layout_height="50dp"
             android:onClick="@{(v)-> modelMainClick.ClickListener5()}"
             android:src="@drawable/lbl5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.16" />
 
         <ImageView
             android:id="@+id/imageView6"

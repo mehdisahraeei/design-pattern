@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bdmain1"
-        tools:context=".ObserverActivity">
+        tools:context=".ui.ObserverActivity">
 
 
         <TextView

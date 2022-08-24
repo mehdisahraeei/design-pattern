@@ -1,8 +1,10 @@
-package com.my.designpattern;
+package com.my.designpattern.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
+
+import com.my.designpattern.R;
 import com.my.designpattern.clicks.Clickfactory;
 import com.my.designpattern.databinding.ActivityFactoryBinding;
 import com.my.designpattern.model.ModelFactory;
@@ -15,7 +17,7 @@ public class FactoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_factory);
+        binding= DataBindingUtil.setContentView(this, R.layout.activity_factory);
         binding.setModelFactory(new ViewmodelFactory(new ModelFactory("Factory Design Pattern")));
         binding.setModelFactoryClick(new Clickfactory(this));
     }
