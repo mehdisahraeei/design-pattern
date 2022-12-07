@@ -1,0 +1,14 @@
+By using the prototype pattern, we no longer need to create multiple objects from the same class. In the prototype class, 
+we create several objects of the class and finally use it
+
+for example:
+
+tip(we create just one object then only will clone)
+
+    //------ProtoType--used-----
+    ProtoType object1=new ProtoType();
+    ProtoType object2=(ProtoType)object1.clone1();
+    
+    object2.Display();
+    
+    

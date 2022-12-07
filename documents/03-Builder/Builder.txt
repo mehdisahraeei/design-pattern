@@ -1,0 +1,11 @@
+If we have two nested classes, by using builder pattern, we can set values for two nested, inner classes 
+simultaneously. also simultaneously we can use functions:
+
+for example:
+
+        //------Builder--used-----
+
+        Builder builder=new Builder.BuilderInto().setFirstname("mahdi").
+                setLastname("sahrai").setAge(22).display().getthis();
+
+        String result=builder.toString();

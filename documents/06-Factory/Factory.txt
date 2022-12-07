@@ -1,0 +1,10 @@
+factory pattern: This pattern is mostly used when there are more classes and this pattern reduces the complexity
+
+
+        Media //interface
+
+
+        //------factory--used-----
+        FactoryProducer producer=new FactoryProducer();
+        Media media=producer.setMedia("film");
+        media.dispMedia("New Film");

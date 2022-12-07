@@ -1,0 +1,5 @@
+Using the singleton pattern, we can access a class without creating the object directly
+
+
+for example:
+SingletonClass.getInstance().setT("");

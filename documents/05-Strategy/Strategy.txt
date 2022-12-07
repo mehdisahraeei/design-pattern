@@ -1,0 +1,9 @@
+Strategy pattern: For example, if we have several player classes and want to consider 
+several task classes for the players, we can use this pattern, but we need an additional or 
+middle class to be able to do this.
+
+
+
+        //-----using------
+        Middle n=new Player1();
+        n.printfinal();
