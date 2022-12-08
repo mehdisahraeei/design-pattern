@@ -1,0 +1,3 @@
+observer pattern:
+With the observer pattern, we can optimally add or remove or maintain class objects in a list
+
