@@ -1,0 +1,12 @@
+AbstractFactory pattern: This pattern is mostly used when there are more classes and this pattern reduces the complexity
+
+
+        Mobile // interface
+        getAbstractfactory // selecting provider
+
+                //-----using-----
+                abstractfactory abstractfactory = FactoryProducer.getAbstractfactory(0);
+                Mobile mobile = abstractfactory.setMobile(1);
+                mobile.displayMobile();
+                
+                
